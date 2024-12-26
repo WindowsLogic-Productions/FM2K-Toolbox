@@ -10,7 +10,7 @@ You need to have installed the following:
 # TO DO LIST
 If you want to do anything on this list, please clone the repo and make a pull request after you've done your code!
 
-- Tabs for FM95/FM2K modifiers. (VB.NET)
+- Tabs for FM95/FM2K modifiers. (VB.NET) [DONE]
 - Modifier buttons and sliders. (VB.NET)
 - Plug-ins (C++)
 - Plug-in manager. (VB.NET)
