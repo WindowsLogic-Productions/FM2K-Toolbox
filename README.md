@@ -14,7 +14,7 @@ If you want to do anything on this list, please clone the repo and make a pull r
 - Modifier buttons and sliders. (VB.NET)
 - Plug-ins (C++)
 - Plug-in manager. (VB.NET)
-- Static interfaces (HTML/CSS/Javascript)
+- Static interfaces/dialogues (HTML/CSS/Javascript)
 # Issue Reporting & Other
 The only way to inject plug-ins at the moment is through FM2K's unused WSOCK32.dll. This is obviously limiting, but hopefully this interface will make it a lot easier.
 
