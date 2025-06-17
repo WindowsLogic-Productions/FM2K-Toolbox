@@ -1,0 +1,12 @@
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\bin\Debug\FM2K Toolbox.exe.config
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\bin\Debug\FM2K Toolbox.exe
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\bin\Debug\FM2K Toolbox.pdb
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\bin\Debug\FM2K Toolbox.xml
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.vbprojAssemblyReference.cache
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K_Toolbox.Main.resources
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K_Toolbox.Resources.resources
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.vbproj.GenerateResource.cache
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.vbproj.CoreCompileInputs.cache
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.exe
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.xml
+J:\Projects\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.pdb

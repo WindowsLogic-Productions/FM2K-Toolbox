@@ -28,55 +28,59 @@ Partial Class Main
         Me.FM95SButton = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.FM95GSButton = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.FileBox = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.FM2KSButton = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.FM2KGSButton = New System.Windows.Forms.Button()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WhatDoesThisDoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.WhatsNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.FileBox = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.FileBox.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
-        Me.FileBox.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -132,6 +136,22 @@ Partial Class Main
         Me.TabPage2.Text = "FM95 Game"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'FM95GSButton
+        '
+        Me.FM95GSButton.Location = New System.Drawing.Point(267, 5)
+        Me.FM95GSButton.Name = "FM95GSButton"
+        Me.FM95GSButton.Size = New System.Drawing.Size(75, 22)
+        Me.FM95GSButton.TabIndex = 3
+        Me.FM95GSButton.Text = "Browse..."
+        Me.FM95GSButton.UseVisualStyleBackColor = True
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(6, 6)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(255, 20)
+        Me.TextBox2.TabIndex = 2
+        '
         'TabPage3
         '
         Me.TabPage3.AutoScroll = True
@@ -150,118 +170,90 @@ Partial Class Main
         Me.TabPage3.Text = "FM2K"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'TabPage4
+        'GroupBox4
         '
-        Me.TabPage4.Controls.Add(Me.FM2KGSButton)
-        Me.TabPage4.Controls.Add(Me.TextBox4)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(376, 373)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "FM2K Game"
-        Me.TabPage4.UseVisualStyleBackColor = True
+        Me.GroupBox4.Controls.Add(Me.Label11)
+        Me.GroupBox4.Location = New System.Drawing.Point(6, 394)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(350, 48)
+        Me.GroupBox4.TabIndex = 18
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Palette"
         '
-        'TabPage5
+        'Label11
         '
-        Me.TabPage5.Controls.Add(Me.Label1)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(376, 373)
-        Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "Plug-ins"
-        Me.TabPage5.UseVisualStyleBackColor = True
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(6, 16)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(339, 13)
+        Me.Label11.TabIndex = 7
+        Me.Label11.Text = "Modify the colours of editing objects such as frames and backgrounds."
         '
-        'FM95GSButton
+        'GroupBox3
         '
-        Me.FM95GSButton.Location = New System.Drawing.Point(267, 5)
-        Me.FM95GSButton.Name = "FM95GSButton"
-        Me.FM95GSButton.Size = New System.Drawing.Size(75, 22)
-        Me.FM95GSButton.TabIndex = 3
-        Me.FM95GSButton.Text = "Browse..."
-        Me.FM95GSButton.UseVisualStyleBackColor = True
+        Me.GroupBox3.Controls.Add(Me.Label10)
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 340)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(350, 48)
+        Me.GroupBox3.TabIndex = 17
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Palette"
         '
-        'TextBox2
+        'Label10
         '
-        Me.TextBox2.Location = New System.Drawing.Point(6, 6)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(255, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(6, 16)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(339, 13)
+        Me.Label10.TabIndex = 7
+        Me.Label10.Text = "Modify the colours of editing objects such as frames and backgrounds."
         '
-        'FM2KSButton
+        'GroupBox2
         '
-        Me.FM2KSButton.Location = New System.Drawing.Point(272, 24)
-        Me.FM2KSButton.Name = "FM2KSButton"
-        Me.FM2KSButton.Size = New System.Drawing.Size(75, 22)
-        Me.FM2KSButton.TabIndex = 3
-        Me.FM2KSButton.Text = "Browse..."
-        Me.FM2KSButton.UseVisualStyleBackColor = True
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Location = New System.Drawing.Point(6, 286)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(350, 48)
+        Me.GroupBox2.TabIndex = 16
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "ActionScreen"
         '
-        'TextBox3
+        'Label9
         '
-        Me.TextBox3.Location = New System.Drawing.Point(9, 25)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(255, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(6, 16)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(304, 13)
+        Me.Label9.TabIndex = 7
+        Me.Label9.Text = "Modify the X and Y co-ordinates of the various script viewports."
         '
-        'FM2KGSButton
+        'GroupBox1
         '
-        Me.FM2KGSButton.Location = New System.Drawing.Point(267, 5)
-        Me.FM2KGSButton.Name = "FM2KGSButton"
-        Me.FM2KGSButton.Size = New System.Drawing.Size(75, 22)
-        Me.FM2KGSButton.TabIndex = 3
-        Me.FM2KGSButton.Text = "Browse..."
-        Me.FM2KGSButton.UseVisualStyleBackColor = True
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 232)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(350, 48)
+        Me.GroupBox1.TabIndex = 15
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Action"
         '
-        'TextBox4
+        'Label8
         '
-        Me.TextBox4.Location = New System.Drawing.Point(6, 6)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(255, 20)
-        Me.TextBox4.TabIndex = 2
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 16)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(336, 26)
+        Me.Label8.TabIndex = 7
+        Me.Label8.Text = "This function is currently unknown and will be implemented in the near" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "future."
         '
-        'MenuStrip1
+        'Label6
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(382, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "File"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelpToolStripMenuItem.Text = "Help"
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AboutToolStripMenuItem.Text = "About"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(174, 198)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "TBD"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(5, 9)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(107, 13)
+        Me.Label6.TabIndex = 14
+        Me.Label6.Text = "Select FM2K INI File:"
         '
         'FileBox
         '
@@ -281,66 +273,6 @@ Partial Class Main
         Me.FileBox.TabIndex = 4
         Me.FileBox.TabStop = False
         Me.FileBox.Text = "File"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(267, 67)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 22)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Browse..."
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(6, 68)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(255, 20)
-        Me.TextBox5.TabIndex = 4
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 16)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(338, 26)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "FM2K has options hidden to the user, which allow editing where it gets" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the last " &
-    "known files from. You can change them here."
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 52)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(92, 13)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "KGT File Location"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 91)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 13)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "BMP File Location"
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(267, 106)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 22)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Browse..."
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(6, 107)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(255, 20)
-        Me.TextBox6.TabIndex = 8
         '
         'Label5
         '
@@ -367,24 +299,180 @@ Partial Class Main
         Me.TextBox7.Size = New System.Drawing.Size(255, 20)
         Me.TextBox7.TabIndex = 11
         '
-        'Label6
+        'Label4
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 9)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(107, 13)
-        Me.Label6.TabIndex = 14
-        Me.Label6.Text = "Select FM2K INI File:"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(6, 91)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(93, 13)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "BMP File Location"
         '
-        'GroupBox1
+        'Button2
         '
-        Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 232)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(350, 48)
-        Me.GroupBox1.TabIndex = 15
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Action"
+        Me.Button2.Location = New System.Drawing.Point(267, 106)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 22)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Browse..."
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(6, 107)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(255, 20)
+        Me.TextBox6.TabIndex = 8
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 52)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(92, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "KGT File Location"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(6, 16)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(338, 26)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "FM2K has options hidden to the user, which allow editing where it gets" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the last " &
+    "known files from. You can change them here."
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(267, 67)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 22)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Browse..."
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(6, 68)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(255, 20)
+        Me.TextBox5.TabIndex = 4
+        '
+        'FM2KSButton
+        '
+        Me.FM2KSButton.Location = New System.Drawing.Point(273, 24)
+        Me.FM2KSButton.Name = "FM2KSButton"
+        Me.FM2KSButton.Size = New System.Drawing.Size(75, 22)
+        Me.FM2KSButton.TabIndex = 3
+        Me.FM2KSButton.Text = "Browse..."
+        Me.FM2KSButton.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(8, 25)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(259, 20)
+        Me.TextBox3.TabIndex = 2
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.Label12)
+        Me.TabPage4.Controls.Add(Me.FM2KGSButton)
+        Me.TabPage4.Controls.Add(Me.TextBox4)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(376, 373)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "FM2K Game"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'FM2KGSButton
+        '
+        Me.FM2KGSButton.Location = New System.Drawing.Point(273, 24)
+        Me.FM2KGSButton.Name = "FM2KGSButton"
+        Me.FM2KGSButton.Size = New System.Drawing.Size(75, 22)
+        Me.FM2KGSButton.TabIndex = 3
+        Me.FM2KGSButton.Text = "Browse..."
+        Me.FM2KGSButton.UseVisualStyleBackColor = True
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(8, 25)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(259, 20)
+        Me.TextBox4.TabIndex = 2
+        '
+        'TabPage5
+        '
+        Me.TabPage5.Controls.Add(Me.Label1)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Size = New System.Drawing.Size(376, 373)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "Plug-ins"
+        Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(174, 198)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(29, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "TBD"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(382, 24)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WhatDoesThisDoToolStripMenuItem, Me.ToolStripSeparator1, Me.WhatsNewToolStripMenuItem, Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'WhatDoesThisDoToolStripMenuItem
+        '
+        Me.WhatDoesThisDoToolStripMenuItem.Name = "WhatDoesThisDoToolStripMenuItem"
+        Me.WhatDoesThisDoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.WhatDoesThisDoToolStripMenuItem.Text = "What does this do?"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        '
+        'WhatsNewToolStripMenuItem
+        '
+        Me.WhatsNewToolStripMenuItem.Name = "WhatsNewToolStripMenuItem"
+        Me.WhatsNewToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.WhatsNewToolStripMenuItem.Text = "What's new?"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
         '
         'Label7
         '
@@ -393,76 +481,19 @@ Partial Class Main
         Me.Label7.ForeColor = System.Drawing.Color.Red
         Me.Label7.Location = New System.Drawing.Point(7, 33)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(309, 26)
+        Me.Label7.Size = New System.Drawing.Size(327, 26)
         Me.Label7.TabIndex = 2
-        Me.Label7.Text = "Ensure any FM95/FM2K processes are closed before modifying." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Ensure you also have" &
-    " a backup of your FM95/FM2K INI files."
+        Me.Label7.Text = "Ensure any FM95/FM2K processes are closed before modifying and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ensure you have a" &
+    " backup of your FM95/FM2K INI files."
         '
-        'Label8
+        'Label12
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(6, 16)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(336, 26)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "This function is currently unknown and will be implemented in the near" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "future."
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 286)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(350, 48)
-        Me.GroupBox2.TabIndex = 16
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "ActionScreen"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(6, 16)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(304, 13)
-        Me.Label9.TabIndex = 7
-        Me.Label9.Text = "Modify the X and Y co-ordinates of the various script viewports."
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.Label10)
-        Me.GroupBox3.Location = New System.Drawing.Point(6, 340)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(350, 48)
-        Me.GroupBox3.TabIndex = 17
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Palette"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(6, 16)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(339, 13)
-        Me.Label10.TabIndex = 7
-        Me.Label10.Text = "Modify the colours of editing objects such as frames and backgrounds."
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.Label11)
-        Me.GroupBox4.Location = New System.Drawing.Point(6, 394)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(350, 48)
-        Me.GroupBox4.TabIndex = 18
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Palette"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(6, 16)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(339, 13)
-        Me.Label11.TabIndex = 7
-        Me.Label11.Text = "Modify the colours of editing objects such as frames and backgrounds."
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(5, 9)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(107, 13)
+        Me.Label12.TabIndex = 15
+        Me.Label12.Text = "Select FM2K INI File:"
         '
         'Main
         '
@@ -472,7 +503,9 @@ Partial Class Main
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Main"
         Me.Text = "FM95/FM2K Toolbox"
         Me.TabControl1.ResumeLayout(False)
@@ -482,22 +515,22 @@ Partial Class Main
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.FileBox.ResumeLayout(False)
+        Me.FileBox.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.FileBox.ResumeLayout(False)
-        Me.FileBox.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -545,4 +578,8 @@ Partial Class Main
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents Label7 As Label
+    Friend WithEvents WhatDoesThisDoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents WhatsNewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label12 As Label
 End Class
