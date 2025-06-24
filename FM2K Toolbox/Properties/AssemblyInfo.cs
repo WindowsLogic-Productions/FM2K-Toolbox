@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FM2K Toolbox")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A toolbox for all your Fighter Maker needs.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("WindowsLogic Productions")]
 [assembly: AssemblyProduct("FM2K Toolbox")]
-[assembly: AssemblyCopyright("Copyright ©  2025")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © 2025 WindowsLogic Productions")]
+[assembly: AssemblyTrademark("FM2K Toolbox")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
