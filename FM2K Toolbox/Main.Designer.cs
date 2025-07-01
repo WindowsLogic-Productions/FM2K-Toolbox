@@ -30,6 +30,8 @@
         {
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.TabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBoxUnkFunc = new System.Windows.Forms.GroupBox();
+            this.labelUnkFunc = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -49,6 +51,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPageFM2K = new System.Windows.Forms.TabPage();
+            this.groupBox2KAction = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.GroupBox4 = new System.Windows.Forms.GroupBox();
             this.Label11 = new System.Windows.Forms.Label();
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
@@ -74,7 +78,9 @@
             this.FM2KGSButton = new System.Windows.Forms.Button();
             this.TextBox4 = new System.Windows.Forms.TextBox();
             this.TabPage5 = new System.Windows.Forms.TabPage();
-            this.Label1 = new System.Windows.Forms.Label();
+            this.buttonRemove = new System.Windows.Forms.Button();          
+            this.flowLayoutPanelFiles = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonBrowse = new System.Windows.Forms.Button();
             this.Label7 = new System.Windows.Forms.Label();
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,15 +90,13 @@
             this.ToolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.WhatsNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox2KAction = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.groupBoxUnkFunc = new System.Windows.Forms.GroupBox();
-            this.labelUnkFunc = new System.Windows.Forms.Label();
             this.tabControlMain.SuspendLayout();
             this.TabPage1.SuspendLayout();
+            this.groupBoxUnkFunc.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.TabPage2.SuspendLayout();
             this.tabPageFM2K.SuspendLayout();
+            this.groupBox2KAction.SuspendLayout();
             this.GroupBox4.SuspendLayout();
             this.GroupBox3.SuspendLayout();
             this.groupBox2KActionScreen.SuspendLayout();
@@ -100,8 +104,6 @@
             this.tabPageFM2KG.SuspendLayout();
             this.TabPage5.SuspendLayout();
             this.MenuStrip1.SuspendLayout();
-            this.groupBox2KAction.SuspendLayout();
-            this.groupBoxUnkFunc.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -132,6 +134,25 @@
             this.TabPage1.TabIndex = 0;
             this.TabPage1.Text = "FM95";
             this.TabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxUnkFunc
+            // 
+            this.groupBoxUnkFunc.Controls.Add(this.labelUnkFunc);
+            this.groupBoxUnkFunc.Location = new System.Drawing.Point(6, 244);
+            this.groupBoxUnkFunc.Name = "groupBoxUnkFunc";
+            this.groupBoxUnkFunc.Size = new System.Drawing.Size(349, 158);
+            this.groupBoxUnkFunc.TabIndex = 20;
+            this.groupBoxUnkFunc.TabStop = false;
+            this.groupBoxUnkFunc.Text = "Unknown Properties";
+            // 
+            // labelUnkFunc
+            // 
+            this.labelUnkFunc.AutoSize = true;
+            this.labelUnkFunc.Location = new System.Drawing.Point(6, 16);
+            this.labelUnkFunc.Name = "labelUnkFunc";
+            this.labelUnkFunc.Size = new System.Drawing.Size(265, 13);
+            this.labelUnkFunc.TabIndex = 7;
+            this.labelUnkFunc.Text = "Functions you can change, but are currently unknown.";
             // 
             // groupBox5
             // 
@@ -317,6 +338,25 @@
             this.tabPageFM2K.TabIndex = 2;
             this.tabPageFM2K.Text = "FM2K";
             this.tabPageFM2K.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2KAction
+            // 
+            this.groupBox2KAction.Controls.Add(this.label19);
+            this.groupBox2KAction.Location = new System.Drawing.Point(6, 299);
+            this.groupBox2KAction.Name = "groupBox2KAction";
+            this.groupBox2KAction.Size = new System.Drawing.Size(350, 48);
+            this.groupBox2KAction.TabIndex = 19;
+            this.groupBox2KAction.TabStop = false;
+            this.groupBox2KAction.Text = "Action";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 16);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(336, 26);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "This function is currently unknown and will be implemented in the near\r\nfuture.";
             // 
             // GroupBox4
             // 
@@ -543,7 +583,9 @@
             // 
             // TabPage5
             // 
-            this.TabPage5.Controls.Add(this.Label1);
+            this.TabPage5.Controls.Add(this.buttonRemove);
+            this.TabPage5.Controls.Add(this.flowLayoutPanelFiles);
+            this.TabPage5.Controls.Add(this.buttonBrowse);
             this.TabPage5.Location = new System.Drawing.Point(4, 22);
             this.TabPage5.Name = "TabPage5";
             this.TabPage5.Size = new System.Drawing.Size(376, 373);
@@ -551,14 +593,34 @@
             this.TabPage5.Text = "Plug-ins";
             this.TabPage5.UseVisualStyleBackColor = true;
             // 
-            // Label1
+            // buttonRemove
             // 
-            this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(301, 324);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(29, 13);
-            this.Label1.TabIndex = 0;
-            this.Label1.Text = "TBD";
+            this.buttonRemove.Location = new System.Drawing.Point(89, 13);
+            this.buttonRemove.Name = "buttonRemove";
+            this.buttonRemove.Size = new System.Drawing.Size(75, 22);
+            this.buttonRemove.TabIndex = 4;
+            this.buttonRemove.Text = "Remove";
+            this.buttonRemove.UseVisualStyleBackColor = true;
+            this.buttonRemove.Enabled = false;
+            this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
+            // 
+            // flowLayoutPanelFiles
+            // 
+            this.flowLayoutPanelFiles.AutoScroll = true;
+            this.flowLayoutPanelFiles.Location = new System.Drawing.Point(8, 41);
+            this.flowLayoutPanelFiles.Name = "flowLayoutPanelFiles";
+            this.flowLayoutPanelFiles.Size = new System.Drawing.Size(358, 323);
+            this.flowLayoutPanelFiles.TabIndex = 3;
+            // 
+            // buttonBrowse
+            // 
+            this.buttonBrowse.Location = new System.Drawing.Point(8, 13);
+            this.buttonBrowse.Name = "buttonBrowse";
+            this.buttonBrowse.Size = new System.Drawing.Size(75, 22);
+            this.buttonBrowse.TabIndex = 1;
+            this.buttonBrowse.Text = "Import";
+            this.buttonBrowse.UseVisualStyleBackColor = true;
+            this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
             // 
             // Label7
             // 
@@ -596,7 +658,7 @@
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
             this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.ExitToolStripMenuItem.Text = "Exit";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -640,44 +702,6 @@
             this.AboutToolStripMenuItem.Text = "About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
-            // groupBox2KAction
-            // 
-            this.groupBox2KAction.Controls.Add(this.label19);
-            this.groupBox2KAction.Location = new System.Drawing.Point(6, 299);
-            this.groupBox2KAction.Name = "groupBox2KAction";
-            this.groupBox2KAction.Size = new System.Drawing.Size(350, 48);
-            this.groupBox2KAction.TabIndex = 19;
-            this.groupBox2KAction.TabStop = false;
-            this.groupBox2KAction.Text = "Action";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 16);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(336, 26);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "This function is currently unknown and will be implemented in the near\r\nfuture.";
-            // 
-            // groupBoxUnkFunc
-            // 
-            this.groupBoxUnkFunc.Controls.Add(this.labelUnkFunc);
-            this.groupBoxUnkFunc.Location = new System.Drawing.Point(6, 244);
-            this.groupBoxUnkFunc.Name = "groupBoxUnkFunc";
-            this.groupBoxUnkFunc.Size = new System.Drawing.Size(349, 158);
-            this.groupBoxUnkFunc.TabIndex = 20;
-            this.groupBoxUnkFunc.TabStop = false;
-            this.groupBoxUnkFunc.Text = "Unknown Properties";
-            // 
-            // labelUnkFunc
-            // 
-            this.labelUnkFunc.AutoSize = true;
-            this.labelUnkFunc.Location = new System.Drawing.Point(6, 16);
-            this.labelUnkFunc.Name = "labelUnkFunc";
-            this.labelUnkFunc.Size = new System.Drawing.Size(265, 13);
-            this.labelUnkFunc.TabIndex = 7;
-            this.labelUnkFunc.Text = "Functions you can change, but are currently unknown.";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -693,12 +717,16 @@
             this.tabControlMain.ResumeLayout(false);
             this.TabPage1.ResumeLayout(false);
             this.TabPage1.PerformLayout();
+            this.groupBoxUnkFunc.ResumeLayout(false);
+            this.groupBoxUnkFunc.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.TabPage2.ResumeLayout(false);
             this.TabPage2.PerformLayout();
             this.tabPageFM2K.ResumeLayout(false);
             this.tabPageFM2K.PerformLayout();
+            this.groupBox2KAction.ResumeLayout(false);
+            this.groupBox2KAction.PerformLayout();
             this.GroupBox4.ResumeLayout(false);
             this.GroupBox4.PerformLayout();
             this.GroupBox3.ResumeLayout(false);
@@ -710,13 +738,8 @@
             this.tabPageFM2KG.ResumeLayout(false);
             this.tabPageFM2KG.PerformLayout();
             this.TabPage5.ResumeLayout(false);
-            this.TabPage5.PerformLayout();
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
-            this.groupBox2KAction.ResumeLayout(false);
-            this.groupBox2KAction.PerformLayout();
-            this.groupBoxUnkFunc.ResumeLayout(false);
-            this.groupBoxUnkFunc.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -753,7 +776,6 @@
         internal System.Windows.Forms.Button FM2KGSButton;
         internal System.Windows.Forms.TextBox TextBox4;
         internal System.Windows.Forms.TabPage TabPage5;
-        internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.MenuStrip MenuStrip1;
         internal System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
@@ -784,6 +806,9 @@
         internal System.Windows.Forms.Label labelUnkFunc;
         internal System.Windows.Forms.GroupBox groupBox2KAction;
         internal System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button buttonBrowse;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelFiles;
+        private System.Windows.Forms.Button buttonRemove;
     }
 }
 

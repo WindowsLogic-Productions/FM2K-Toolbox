@@ -1,0 +1,10 @@
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\bin\Debug\FM2K Toolbox.exe.config
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\bin\Debug\FM2K Toolbox.exe
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\bin\Debug\FM2K Toolbox.pdb
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.csprojAssemblyReference.cache
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K_Toolbox.Main.resources
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K_Toolbox.Properties.Resources.resources
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.csproj.GenerateResource.cache
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.csproj.CoreCompileInputs.cache
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.exe
+D:\VisualStudio2017\FM2K-Toolbox\FM2K Toolbox\obj\Debug\FM2K Toolbox.pdb
