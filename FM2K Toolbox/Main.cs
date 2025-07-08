@@ -7,9 +7,12 @@ namespace FM2K_Toolbox
 {
     public partial class Main : Form
     {
+        private PluginFileManager pluginFileManager;
         public Main()
         {
             InitializeComponent();
+
+            pluginFileManager = new PluginFileManager(this, flowLayoutPanelFiles, buttonRemove);
         }
 
         #region "File Menu"
@@ -35,109 +38,31 @@ namespace FM2K_Toolbox
 
         }
         #endregion
-
-        /* Plugins tab */
-
-        // Browse files with .dll extension to add as plugin
+        /* Plugins Tab */
+        // browse and add selected file
         private void buttonBrowse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Title = "Select a file";
-            openFileDialog.Filter = "DLL files (*.dll)|*.dll";
-            openFileDialog.Multiselect = true;
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Title = "Select a file",
+                // Filter = "DLL files (*.dll)|*.dll",
+                Filter = "All files (*.*)|*.*",
+            Multiselect = true
+            };
+
             if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {              
+            {
                 foreach (var file in openFileDialog.FileNames)
                 {
-                    AddFileItem(file);
-
-                    // TODO: add logic to save added files
+                    pluginFileManager.AddFile(file);
                 }
             }
         }
 
-        // Add file to the panel
-        private void AddFileItem(string filePath)
-        {            
-            Panel panel = new Panel();
-            panel.Width = flowLayoutPanelFiles.ClientSize.Width - 25;
-            panel.Height = 30;
-            panel.Margin = new Padding(3);
-      
-            CheckBox checkBox = new CheckBox();
-            checkBox.Width = 20;
-            checkBox.Height = 20;
-            checkBox.Location = new Point(5, 5);
-           
-            Label lbl = new Label();
-            lbl.Text = System.IO.Path.GetFileName(filePath);
-            lbl.AutoSize = false;
-            lbl.Width = panel.Width - 30;
-            lbl.Height = 25;
-            lbl.Location = new Point(30, 5);
-         
-            panel.Controls.Add(checkBox);
-            panel.Controls.Add(lbl);
-         
-            flowLayoutPanelFiles.Controls.Add(panel);
-            UpdateRemoveButtonState();
-        }
-
-        // Remove selected files
+        // remove selected file
         private void buttonRemove_Click(object sender, EventArgs e)
-        {           
-            var panelsToRemove = new List<Control>();
-
-            foreach (Control ctrl in flowLayoutPanelFiles.Controls)
-            {
-                if (ctrl is Panel panel)
-                {
-                    foreach (Control child in panel.Controls)
-                    {
-                        if (child is CheckBox checkBox && checkBox.Checked)
-                        {
-                            panelsToRemove.Add(panel);
-                            break;
-                        }
-                    }
-                }
-            }
-
-            var result = ShowConfirmDialog(panelsToRemove.Count);
-
-            if (result == DialogResult.Yes)
-            {
-                foreach (var panel in panelsToRemove)
-                {
-                    flowLayoutPanelFiles.Controls.Remove(panel);
-                    panel.Dispose();
-                }
-
-                UpdateRemoveButtonState();
-            }
-        }
-
-        // Update Remove Button State
-        private void UpdateRemoveButtonState()
         {
-            buttonRemove.Enabled = flowLayoutPanelFiles.Controls.Count > 0;
-        }
-
-        // show modal to confirm file removal
-        private DialogResult ShowConfirmDialog(int panelsToRemoveCount)
-        {
-            if (panelsToRemoveCount == 0)
-            {
-                MessageBox.Show("Please select at least one file to remove.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return DialogResult.Cancel;
-            }
-
-            return MessageBox.Show(
-                this,
-                $"Are you sure you want to remove {panelsToRemoveCount} file(s)?",
-                "Confirm Removal",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning);           
+            pluginFileManager.RemoveFiles();
         }
     }
 }
